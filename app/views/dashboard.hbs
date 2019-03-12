@@ -1,0 +1,144 @@
+<link
+      href="/styles/todo.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+/>
+
+ {{!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> --}}
+
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+ <link rel="stylesheet" href="/resources/demos/style.css">
+
+ <nav id="navbar" class="">
+      <div class="nav-wrapper">
+        <!-- Navbar Logo -->
+        <div class="logo">
+          <img id="xxxx" src="/images/logo.jpg" alt="Odom" />
+          <a class="logoAndFont" href="/">Accounting Monthly Closing Calendar</a>
+        </div>
+
+        <!-- Navbar Links -->
+        <ul id="menu">
+          <li><a href="/index">Log Out</a></li>
+        </ul>
+        
+      </div>
+</nav>
+
+<div id="todo-container" class="container">
+<style>
+
+h2{
+text-align: center;
+font-weight: bolder;
+font-size: 24px;
+}
+
+h3{
+text-align: center;
+font-weight: bolder;
+font-size: 22px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  overflow: auto;
+  width: 100%;
+  margin-top: 30px;
+  border: 1px solid #a59e9e;
+}
+
+td, th {
+  text-align: left;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #a59e9e;
+}
+
+tr{
+  border: 1px solid #a59e9e;
+}
+
+tr:nth-child(even) {
+  background-color: none;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #a59e9e;
+
+}
+</style>
+</head>
+<body>
+
+<h2>Accounting Department Monthly Closing Calendar</h2>
+<h3> For the Month Ended: <input style="width: 130px; background-color:lightpink" type="text" id="datepicker" class="hasdatepicker"></h3> 
+
+<hr style="solid 1px gray; padding:1px; background: gray; width: 860px">
+
+<div class="table-responsive">
+<table class="table table-hover">
+  <thead>
+    <tr>
+     <th scope="col">Delete</th>
+     <th scope="col">Edit</th>
+     <th scope="col">done</th>
+     <th scope="col">Due Date</th>
+     <th scope="col">Task ID</th>
+     <th scope="col">Task Name</th>
+     <th scope="col">Name ID</th>
+     <th scope="col">Perform By</th>
+     <th scope="col">Odom</th>
+     <th scope="col">CCAK</th>
+     <th scope="col">CBHI</th>
+     <th scope="col">SGWS</th>
+     <th scope="col">NWB</th>
+     <th scope="col">Quarterly</th>
+     <th scope="col">Note</th>
+   </tr>
+  
+  </thead>
+
+  <tbody>
+   <tr>
+     <td id="delete-task" style="text-align: center;"><span class="glyphicon glyphicon-trash"></span></td>
+     <td id="edit" style="text-align: center"><p><span class="glyphicon glyphicon-edit"></span></p></td>
+     <td id="done" style="text-align: center;"><input type="checkbox" name="check-tabl" ></td>
+     <td id="due"></td>
+     <td id="task-id"></td>
+     <td id="task"></td>
+     <td id="name-id"></td>
+     <td id="whom"></td>
+     <td id="odom"></td>
+     <td id="ccak"></td>
+     <td id="cbhi"></td>
+     <td id="sgws"></td>
+     <td id="nwb"></td>
+     <td id="quarterly"></td>
+     <td id="note"></td>
+    
+   </tr> 
+
+  </tbody>
+  
+</table>
+</div>
+
+<div class="pagi" >
+  <button class="btn" onclick="location.href='#'">&laquo;</button>
+  <button class="btn" onclick="location.href='#'">1</button>
+  <button class="btn" class="active" onclick="location.href='#'">2</button>
+  <button class="btn" onclick="location.href='#'">3</button>
+  <button class="btn" onclick="location.href='#'">&raquo;</button>
+</div>
+
+</div>
+{{!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> --}}
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            
+
+
+<script src="/js/index.js"></script>
